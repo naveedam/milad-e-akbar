@@ -1,6 +1,8 @@
 import Link from "next/link";
 import milad from "@/data/milad.json";
 import VerseBlock from "@/components/reader/VerseBlock";
+import ReaderControls from "@/components/reader/ReaderControls";
+import FontSizeControl from "@/components/reader/FontSizeControl";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -27,6 +29,7 @@ export default async function RecitationPage({ params }: Props) {
           <Link href="/library" className="hover:text-[#8C6A2A]">
             ← Library
           </Link>
+
           <span>Page {item.page}</span>
         </div>
 
@@ -42,12 +45,9 @@ export default async function RecitationPage({ params }: Props) {
             {item.poet}
           </p>
 
-          {/* Reading Preference */}
-          <div className="mt-5 flex justify-end">
-            <button className="rounded-full border border-[#C6A54A] px-3 py-1 text-xs text-[#8C6A2A] transition hover:bg-[#F3E7BF]">
-              Roman ON
-            </button>
-          </div>
+          {/* Interactive Reading Controls */}
+          <ReaderControls />
+          <FontSizeControl />
 
           {/* Bismillah Ornament */}
           <div className="mt-6 flex items-center justify-center gap-3">
