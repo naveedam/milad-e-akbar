@@ -45,9 +45,14 @@ export default async function RecitationPage({ params }: Props) {
             {item.poet}
           </p>
 
-          {/* Interactive Reading Controls */}
-          <ReaderControls />
-          <FontSizeControl />
+          {/* Reader Controls Panel */}
+<div className="mt-6 rounded-2xl bg-[#EFE7D2] p-4">
+  <ReaderControls />
+
+  <div className="mt-4 border-t border-[#D8C9A8] pt-4">
+    <FontSizeControl />
+  </div>
+</div>
 
           {/* Bismillah Ornament */}
           <div className="mt-6 flex items-center justify-center gap-3">
