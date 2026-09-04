@@ -48,3 +48,10 @@ body {
 .gold {
   color: var(--gold);
 }
+.verse {
+  margin: 3rem 0;
+}
+
+.ornament {
+  color: #b08d36;
+}
