@@ -3,20 +3,13 @@
     "id": "001",
     "section": "Hamd",
     "title": "Allah Hu Allah",
+    "poet": "Traditional",
     "page": 1,
+    "qiyam": false,
     "verses": [
       {
         "urdu": "اللّٰہ ہو اللّٰہ",
-        "roman": "Allah Hu Allah",
-        "english": "Allah, He is Allah"
-      }
-    ],
-    "audio": "/audio/001.mp3",
-    "timings": [
-      {
-        "line": 0,
-        "start": 0,
-        "end": 6.5
+        "roman": "Allah Hu Allah"
       }
     ]
   },
@@ -24,30 +17,17 @@
     "id": "042",
     "section": "Naat",
     "title": "Mustafa Jaan-e-Rehmat",
+    "poet": "Imam Ahmad Raza Khan",
     "page": 42,
+    "qiyam": true,
     "verses": [
       {
         "urdu": "مصطفیٰ جانِ رحمت پہ لاکھوں سلام",
-        "roman": "Mustafa jaan-e-rehmat pe lakhon salaam",
-        "english": "Countless salutations upon the Beloved Prophet"
+        "roman": "Mustafa jaan-e-rehmat pe lakhon salaam"
       },
       {
         "urdu": "شمعِ بزمِ ہدایت پہ لاکھوں سلام",
-        "roman": "Sham-e-bazm-e-hidayat pe lakhon salaam",
-        "english": "Upon the lamp of guidance, countless salutations"
-      }
-    ],
-    "audio": "/audio/042.mp3",
-    "timings": [
-      {
-        "line": 0,
-        "start": 0,
-        "end": 7.8
-      },
-      {
-        "line": 1,
-        "start": 7.9,
-        "end": 15.6
+        "roman": "Sham-e-bazm-e-hidayat pe lakhon salaam"
       }
     ]
   }
