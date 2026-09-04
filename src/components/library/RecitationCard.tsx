@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { MiladEntry } from "@/lib/types";
+import UrduText from "@/components/ui/UrduText";
 
 interface Props {
   item: MiladEntry;
@@ -21,12 +22,9 @@ export default function RecitationCard({ item }: Props) {
 
         <h3 className="mt-2 text-lg font-bold">{item.title}</h3>
 
-        <p
-          dir="rtl"
-          className="mt-3 text-right text-2xl leading-loose text-gray-800"
-        >
+        <UrduText className="mt-3 text-gray-800">
           {item.verses[0].urdu}
-        </p>
+        </UrduText>
 
         <p className="mt-2 text-sm italic text-gray-600">
           {item.verses[0].roman}

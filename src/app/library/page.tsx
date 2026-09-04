@@ -42,7 +42,7 @@ export default function LibraryPage() {
 
   return (
     <main className="min-h-screen bg-[#0F5132] text-white">
-      <div className="mx-auto max-w-md px-5 py-6">
+      <div className="mx-auto max-w-lg px-5 py-6">
         <h1 className="text-3xl font-bold">Library</h1>
 
         <p className="mt-1 text-emerald-200">
