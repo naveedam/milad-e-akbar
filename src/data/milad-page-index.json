@@ -1,0 +1,670 @@
+{
+  "_readme": [
+    "Page-to-content index for Milad-e-Akbar.pdf, built by visually reading all 87 scanned pages.",
+    "`page` / `endPage` are PDF/scan sequence numbers (1-87), matching pdftoppm order — NOT the book's own printed folio numbers (front matter is unnumbered, so the two drift apart).",
+    "PDF pages 4 and 5 are byte-identical duplicate scans of the same physical page, as are pages 35 and 36. No content is missing — just don't render the duplicate twice.",
+    "The book does not label sections as Hamd/Naat/Salam/Manqabat. It uses generic form-labels (Ghazal, Qasida, Qit'a, Abyat, Musaddas, Ash'ar, Deegar/'more') and the devotional category has to be inferred from content (who is being addressed). `bookLabel` = the literal label printed in the book (null if the poem is unlabeled). `suggestedSection` = inferred category, using an EXTENDED set beyond your current MiladEntry union — see _schemaNote.",
+    "`title` is a transliteration of the opening line/refrain, not an official title (this book mostly doesn't name its poems).",
+    "Prose narrative / discourse sections are included too (suggestedSection: 'Narrative') since they're structurally important for a reader/reciter app, even though they're not verse.",
+    "Verses are NOT transcribed here — this is a structural index only. Transcribing all verses into Urdu+Roman per the Verse type would be a much larger follow-on pass."
+  ],
+  "_schemaNote": "Recommend extending MiladEntry['section'] from \"Hamd\" | \"Naat\" | \"Salam\" | \"Manqabat\" to also include \"Durood\" | \"Munajat\" | \"Lori\" | \"Tazmeen\" | \"Miracle\" | \"Narrative\" (front matter, hikayat/miracle prose, and Mi'raj narrative genuinely don't fit the original four).",
+  "entries": [
+    {
+      "page": 1,
+      "endPage": 1,
+      "bookLabel": null,
+      "suggestedSection": "Frontmatter",
+      "title": "Cover / title page — Milad-e-Akbar, Khwaja Muhammad Akbar Warsi, Gohar Kutub Khana, Urdu Bazar Lahore",
+      "poet": "Khwaja Muhammad Akbar Warsi",
+      "qiyam": false
+    },
+    {
+      "page": 2,
+      "endPage": 2,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Opening invocation / Bismillah, prose preamble on divine attributes",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 3,
+      "endPage": 4,
+      "bookLabel": "غزل (Ghazal)",
+      "suggestedSection": "Hamd",
+      "title": "Tujhe dhoondna tha... teri shaan jalla jalaaluhu",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Page 5 is a duplicate scan of page 4."
+    },
+    {
+      "page": 4,
+      "endPage": 5,
+      "bookLabel": "غزل (Ghazal)",
+      "suggestedSection": "Hamd",
+      "title": "Ayaan Allah hi Allah hai, nihaan Allah hi Allah hai",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Page 5 is a duplicate scan of page 4 (byte-identical)."
+    },
+    {
+      "page": 6,
+      "endPage": 7,
+      "bookLabel": "درود تاج (Durood-e-Taj)",
+      "suggestedSection": "Durood",
+      "title": "Durood-e-Taj — Arabic durood text with Urdu translation",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 7,
+      "endPage": 8,
+      "bookLabel": "فضائل درود شریف",
+      "suggestedSection": "Narrative",
+      "title": "Virtues of reciting Durood Shareef (Qur'an 33:56 discussion)",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 8,
+      "endPage": 9,
+      "bookLabel": "قصیدہ (Qasida)",
+      "suggestedSection": "Naat",
+      "title": "Har dard ki dawa hai, sall ali Muhammad",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 9,
+      "endPage": 10,
+      "bookLabel": "قصیدہ (Qasida)",
+      "suggestedSection": "Naat",
+      "title": "Jo khayal aaya to khwaab mein woh jamal apna dikha gaye",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Preceded by a Hikayat (anecdote) about Saad ibn Ma'az's dream."
+    },
+    {
+      "page": 10,
+      "endPage": 10,
+      "bookLabel": null,
+      "suggestedSection": "Durood",
+      "title": "Padho durood padho ashiqo, durood padho — refrain interlude",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 11,
+      "endPage": 11,
+      "bookLabel": "آداب محفل میلاد شریف / فضائل میلاد شریف",
+      "suggestedSection": "Narrative",
+      "title": "Etiquette of the Milad gathering; virtues of Milad Shareef",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 12,
+      "endPage": 13,
+      "bookLabel": "قصیدہ (Qasida)",
+      "suggestedSection": "Naat",
+      "title": "Muhammad Mustafa asal ki, aaj mehfil hai",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Followed by a Hikayat set in Mulk-e-Hijaz (a Jewish slave freed at a Milad gathering) spanning p.12-13."
+    },
+    {
+      "page": 14,
+      "endPage": 14,
+      "bookLabel": null,
+      "suggestedSection": "Durood",
+      "title": "Padho durood padho ashiqo... Tum aaqa ho mere bande mein tumhara",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 15,
+      "endPage": 17,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Discourse on Noor-e-Muhammadi and the letters/numerology of the name 'Muhammad'",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 16,
+      "endPage": 16,
+      "bookLabel": "غزل (Ghazal)",
+      "suggestedSection": "Naat",
+      "title": "Taazeem se leta hai khuda naam Muhammad ka",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 18,
+      "endPage": 18,
+      "bookLabel": null,
+      "suggestedSection": "Naat",
+      "title": "Khatam-ul-Anbiya haq ka pyara hamara Nabi",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 19,
+      "endPage": 19,
+      "bookLabel": "تمہید پیدائشِ نورِ محمد ﷺ",
+      "suggestedSection": "Narrative",
+      "title": "Prelude to the Birth of the Light of Muhammad ﷺ — major section header; the Milad narrative proper begins here",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 20,
+      "endPage": 21,
+      "bookLabel": "(unclear scan — genre box, possibly حمد)",
+      "suggestedSection": "Naat",
+      "title": "Kisi ka buland aisa martaba nahi — comparison of the Prophet's rank to Musa (as)",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 21,
+      "endPage": 21,
+      "bookLabel": "قصیدہ (Qasida)",
+      "suggestedSection": "Naat",
+      "title": "Tujhse karam ka risalat aap ne kehna",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 22,
+      "endPage": 22,
+      "bookLabel": "قطعہ (Qit'a)",
+      "suggestedSection": "Narrative",
+      "title": "Kaun leyne ko hai tayyar koi bole to — Adam and the trust (amanat) dialogue, in verse",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 23,
+      "endPage": 25,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Story of Adam (as) and the Noor-e-Muhammad passing through Sheeth, Nooh, Ibrahim, Ismail to Abdul Muttalib",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 26,
+      "endPage": 26,
+      "bookLabel": "قصیدہ (Qasida)",
+      "suggestedSection": "Naat",
+      "title": "Neergiyan ajab baaqi Muhammad ke Noor ki — Noor-e-Muhammad tracing through Abdullah",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 27,
+      "endPage": 28,
+      "bookLabel": null,
+      "suggestedSection": "Naat",
+      "title": "Kis basat hoke ghar ghar aaja lehrane wala hai — night of the blessed conception",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Narrative of Abdullah & Aminah's marriage precedes; page 28 continues the poem then resumes prose narrative."
+    },
+    {
+      "page": 29,
+      "endPage": 29,
+      "bookLabel": "قصیدہ (Qasida)",
+      "suggestedSection": "Naat",
+      "title": "Aamad Mustafa jis se pyara khila jashn chaman — celebrating the pregnancy/impending arrival",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 30,
+      "endPage": 32,
+      "bookLabel": "درود و سلام بوقتِ قیام",
+      "suggestedSection": "Salam",
+      "title": "Ya Habib salam alaik, salawat Allah alaik — the standing Salam (Qiyam)",
+      "poet": null,
+      "qiyam": true,
+      "notes": "This is THE explicit, prominent Qiyam Salam — the clearest 'Salam' entry in the book."
+    },
+    {
+      "page": 32,
+      "endPage": 32,
+      "bookLabel": "چاہیے یہ سلام پیش کرے",
+      "suggestedSection": "Salam",
+      "title": "Second Salam variant, same Qiyam context",
+      "poet": null,
+      "qiyam": true
+    },
+    {
+      "page": 32,
+      "endPage": 34,
+      "bookLabel": "نعت",
+      "suggestedSection": "Naat",
+      "title": "Jab keh paida woh shah-e-zaman ho gaya — the moment of birth",
+      "poet": null,
+      "qiyam": false,
+      "notes": "First explicit 'نعت' box-label in the book."
+    },
+    {
+      "page": 33,
+      "endPage": 34,
+      "bookLabel": "مسدس (Musaddas)",
+      "suggestedSection": "Naat",
+      "title": "Lo woh Fakhr-e-Yarab tashreef laaye — arrival of the newborn",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 34,
+      "endPage": 34,
+      "bookLabel": "اشعار (Ash'ar)",
+      "suggestedSection": "Naat",
+      "title": "Ajab Milad-e-Muhammad se yeh sab tarah sasktein — praising Eid Milad",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 35,
+      "endPage": 36,
+      "bookLabel": "اشعار (Ash'ar)",
+      "suggestedSection": "Naat",
+      "title": "Lo woh mah-e-laqa ko god mein lo — Aminah takes the newborn into her lap; celestial women attend",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Page 36 is a duplicate scan of page 35 (byte-identical)."
+    },
+    {
+      "page": 35,
+      "endPage": 36,
+      "bookLabel": "اشعار (Ash'ar)",
+      "suggestedSection": "Naat",
+      "title": "Sajda-e-Ma'bood mein rakh kar sar ne arz ki — the newborn's prostration, prays for the Ummah's forgiveness",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Second Ash'ar box on the same page; page 36 duplicates page 35."
+    },
+    {
+      "page": 37,
+      "endPage": 38,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Miracles on the day of birth (fire of Zoroastrians extinguished, Kisra's palace cracks, etc.); Halima/Shaffa narrations; Abdul Muttalib finds the baby",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 38,
+      "endPage": 39,
+      "bookLabel": "قصیدہ (Qasida)",
+      "suggestedSection": "Naat",
+      "title": "Jab arab ke chaman mein woh noor-e-khuda apna jalwa dikhane laga — cosmic signs at birth",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 39,
+      "endPage": 41,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Continued cosmic-signs narrative; naming of the child Muhammad",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 41,
+      "endPage": 41,
+      "bookLabel": null,
+      "suggestedSection": "Naat",
+      "title": "Woh phool arab ke gulshan ka — flower metaphor for the Prophet ﷺ (continuation)",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 41,
+      "endPage": 41,
+      "bookLabel": "واقعاتِ رضاعت",
+      "suggestedSection": "Narrative",
+      "title": "Events of the wet-nursing period — section header",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 42,
+      "endPage": 43,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Halima Sadia's story; citation of Imam Ghazali's Ihya Ulum al-Din",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 43,
+      "endPage": 43,
+      "bookLabel": "ابیات (Abyat)",
+      "suggestedSection": "Naat",
+      "title": "Main aaj apne pyare ko le chal ke chali houn — carrying the child to Halima's tribe",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 43,
+      "endPage": 44,
+      "bookLabel": "ابیات (Abyat)",
+      "suggestedSection": "Naat",
+      "title": "Jis qadr naaz karoon aaj mujhe zeba hai — Halima's she-camel miracle en route",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 44,
+      "endPage": 44,
+      "bookLabel": "غزل (Ghazal)",
+      "suggestedSection": "Manqabat",
+      "title": "Mubarak tujhe yeh barai Halima — praising Halima's good fortune",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Praises a companion/nursemaid rather than the Prophet directly, closer to Manqabat in spirit."
+    },
+    {
+      "page": 45,
+      "endPage": 45,
+      "bookLabel": "غزل (Ghazal)",
+      "suggestedSection": "Naat",
+      "title": "Jo larke ke hum jaa baja kheelte thay — the miraculous childhood (didn't play like other children)",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 46,
+      "endPage": 46,
+      "bookLabel": "لوری (Lori)",
+      "suggestedSection": "Lori",
+      "title": "Halima's lullaby to baby Muhammad ﷺ",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Distinct genre — lullaby — outside the Hamd/Naat/Salam/Manqabat set."
+    },
+    {
+      "page": 47,
+      "endPage": 48,
+      "bookLabel": null,
+      "suggestedSection": "Miracle",
+      "title": "The Splitting of the Chest (Shaqq-us-Sadr) narrative",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 48,
+      "endPage": 49,
+      "bookLabel": "حلیہ شریف",
+      "suggestedSection": "Narrative",
+      "title": "Hilya Shareef — prose physical description of the Prophet ﷺ",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 49,
+      "endPage": 49,
+      "bookLabel": "ابیات (Abyat)",
+      "suggestedSection": "Naat",
+      "title": "Hilya in verse — physical description poem",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 50,
+      "endPage": 50,
+      "bookLabel": "قصیدہ (Qasida)",
+      "suggestedSection": "Naat",
+      "title": "Dekhe tera jalwa jo tarap nazar bhi — on the Prophet's beauty",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 51,
+      "endPage": 52,
+      "bookLabel": "قصیدہ (Qasida) + دیگر/قطعہ",
+      "suggestedSection": "Naat",
+      "title": "Ae gesuo wale — with Quranic epigraph (Wal-lail iza yaghsha)",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Continues via 'دیگر' and 'قطعہ' labeled continuations referencing the Mi'raj."
+    },
+    {
+      "page": 52,
+      "endPage": 52,
+      "bookLabel": "قصیدہ مدینہ شریف",
+      "suggestedSection": "Naat",
+      "title": "Qasida on Madina Shareef — praising the city of Madina",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Continues via a 'دیگر' box."
+    },
+    {
+      "page": 53,
+      "endPage": 53,
+      "bookLabel": "نعت",
+      "suggestedSection": "Naat",
+      "title": "Fitno ke zamano mein hu jab jalwa numaa dali",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 54,
+      "endPage": 61,
+      "bookLabel": "معجزاتِ جناب رسول اکرمﷺ",
+      "suggestedSection": "Miracle",
+      "title": "Miracles of the Prophet ﷺ — numbered anecdotes (talking pebbles/Abu Jahl, camel testimony, splitting of the moon, deer's testimony, food multiplication at Khandaq, healing saliva, the weeping pillar/Ustun-e-Hannana, etc.)",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Long section, includes two 'مثنوی شریف' (Rumi Masnavi) excerpts around p.56 and a 'قطعہ' at p.57. Durood-chorus interludes recur throughout."
+    },
+    {
+      "page": 61,
+      "endPage": 63,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Transition into discourse on the virtues of Hazrat Ali and love of Ahl-e-Bait",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 63,
+      "endPage": 63,
+      "bookLabel": null,
+      "suggestedSection": "Manqabat",
+      "title": "Ya Mola Ali Mushkil Kusha — Manqabat for Hazrat Ali",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Unlabeled in the book but unmistakably Manqabat by content/refrain."
+    },
+    {
+      "page": 63,
+      "endPage": 64,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Discourse cautioning moderation in love of Ahl-e-Bait (anti-ghuluww), Hadith citations",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 64,
+      "endPage": 64,
+      "bookLabel": "معراج",
+      "suggestedSection": "Narrative",
+      "title": "Mi'raj (Night Journey / Ascension) — major new narrative chapter begins",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 65,
+      "endPage": 66,
+      "bookLabel": "آغاز",
+      "suggestedSection": "Narrative",
+      "title": "Theological discussion (physical vs. spiritual ascension) then 'Beginning' of the Mi'raj account proper",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 66,
+      "endPage": 68,
+      "bookLabel": "نظم (Nazm)",
+      "suggestedSection": "Naat",
+      "title": "Falak bola ke mujh se mah-o-khursheed darakhshaan hain — dialogue-poem between Heaven and Earth, each boasting of nearness to the Prophet ﷺ",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 68,
+      "endPage": 69,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Mi'raj journey begins — Buraq, angels, Jibrail",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 69,
+      "endPage": 69,
+      "bookLabel": "قصیدہ معراجِ شریف",
+      "suggestedSection": "Naat",
+      "title": "Do-jahaan mein noor ali noor kaho, kaisi raunaq faza aaj ki raat hai — Qasida celebrating the night of Mi'raj",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 69,
+      "endPage": 70,
+      "bookLabel": "غزل (Ghazal)",
+      "suggestedSection": "Naat",
+      "title": "Yeh jalwa hai shab-e-Mairaj hai tafseel se kah do — on the night of Ascension",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 70,
+      "endPage": 73,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Mi'raj continues — description of Buraq, ascent through the seven heavens, meeting the prophets, gift of the five daily prayers",
+      "poet": null,
+      "qiyam": false,
+      "notes": "Interspersed with short verse/shعر interludes."
+    },
+    {
+      "page": 74,
+      "endPage": 76,
+      "bookLabel": "تضمین بر اشعار حضرت شہاب الدین آشیاں",
+      "suggestedSection": "Naat",
+      "title": "Tazmeen (poetic interpolation) on the verses of Hazrat Shahabuddin — the divine throne / nearness moment of Mi'raj",
+      "poet": "interpolating Shahabuddin",
+      "qiyam": false
+    },
+    {
+      "page": 76,
+      "endPage": 76,
+      "bookLabel": "مؤلف",
+      "suggestedSection": "Narrative",
+      "title": "Author's own note describing a vision of the Arsh",
+      "poet": "Khwaja Muhammad Akbar Warsi",
+      "qiyam": false
+    },
+    {
+      "page": 76,
+      "endPage": 79,
+      "bookLabel": null,
+      "suggestedSection": "Narrative",
+      "title": "Mi'raj continues — the intercession dialogue, origin of the Tashahhud, gift of the closing verses of Surah al-Baqarah",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 79,
+      "endPage": 79,
+      "bookLabel": null,
+      "suggestedSection": "Naat",
+      "title": "Jashn-e-Mairaj ka mubarak ho — celebrating the return from Mi'raj",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 80,
+      "endPage": 80,
+      "bookLabel": "تضمین بر شعر حضرت شیخ سعدی علیہ الرحمہ",
+      "suggestedSection": "Naat",
+      "title": "Balaghal 'ula be kamalihi — Tazmeen on Sheikh Saadi's famous Persian na'at",
+      "poet": "interpolating Sheikh Saadi",
+      "qiyam": false
+    },
+    {
+      "page": 81,
+      "endPage": 83,
+      "bookLabel": "مناجات بدرگاہ قاضی الحاجات",
+      "suggestedSection": "Munajat",
+      "title": "Supplication to Allah, the Fulfiller of Needs — closing du'a in verse",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 82,
+      "endPage": 83,
+      "bookLabel": "قطعہ تاریخ ... از جناب مولانا نامی",
+      "suggestedSection": "Narrative",
+      "title": "Chronogram (date-riddle) verse by Mawlana Nami dating the book's composition; author's note on his poetic 'jawabs' to Sheikh Saadi's Gulistan and others",
+      "poet": "Mawlana Nami (chronogram); Khwaja Muhammad Akbar Warsi (note)",
+      "qiyam": false
+    },
+    {
+      "page": 83,
+      "endPage": 83,
+      "bookLabel": "تتمہ",
+      "suggestedSection": "Narrative",
+      "title": "'Tatimma' — Supplement/Appendix section header",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 84,
+      "endPage": 84,
+      "bookLabel": "اضافہ جدیدہ نعتیہ کلام",
+      "suggestedSection": "Naat",
+      "title": "New Addendum of Naat Poetry — section header; first poem: Woh mera mah agar be-naqaab ho jaye",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 84,
+      "endPage": 84,
+      "bookLabel": "نعت دیگر",
+      "suggestedSection": "Naat",
+      "title": "Mit gaye kaun hai tabaqat kis se mitnay ki",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 85,
+      "endPage": 86,
+      "bookLabel": "دیگر (x5)",
+      "suggestedSection": "Naat",
+      "title": "Five further untitled 'دیگر' Naats continuing the addendum",
+      "poet": null,
+      "qiyam": false
+    },
+    {
+      "page": 86,
+      "endPage": 87,
+      "bookLabel": "تضمین بر غزل حضرت عزیز",
+      "suggestedSection": "Naat",
+      "title": "Tazmeen on the Ghazal of Hazrat Aziz — the book's closing poem",
+      "poet": "interpolating Hazrat Aziz",
+      "qiyam": false,
+      "notes": "Ends with 'تمت' (The End) on page 87."
+    }
+  ]
+}

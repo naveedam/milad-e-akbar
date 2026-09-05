@@ -3,6 +3,7 @@ import milad from "@/data/milad.json";
 import VerseBlock from "@/components/reader/VerseBlock";
 import ReaderControls from "@/components/reader/ReaderControls";
 import FontSizeControl from "@/components/reader/FontSizeControl";
+import PageImage from "@/components/reader/PageImage";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -62,16 +63,8 @@ export default async function RecitationPage({ params }: Props) {
           </div>
         </div>
 
-        {/* Verses */}
-        <div className="mt-8">
-          {item.verses.map((verse, index) => (
-            <VerseBlock
-              key={index}
-              urdu={verse.urdu}
-              roman={verse.roman}
-            />
-          ))}
-        </div>
+        {/* Scanned Book Page */}
+         <PageImage page={item.page} />
 
         {/* Playback Bar */}
         <div className="mt-10 rounded-full bg-[#0F5132] px-4 py-3 text-white shadow-lg">

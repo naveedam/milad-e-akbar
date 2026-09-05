@@ -6,22 +6,31 @@ import { useReaderStore } from "@/store/readerStore";
 interface Props {
   urdu: string;
   roman: string;
+  active?: boolean;
 }
 
-export default function VerseBlock({ urdu, roman }: Props) {
+export default function VerseBlock({
+  urdu,
+  roman,
+  active = false,
+}: Props) {
   const { showRoman, fontSize } = useReaderStore();
 
   return (
-    <div className="verse">
+    <div
+      className={`verse rounded-xl px-4 py-5 transition ${
+        active ? "bg-[#FFF4CC]" : ""
+      }`}
+    >
       <UrduText
-        className="text-center leading-loose text-gray-900"
-        style={{ fontSize: `${fontSize}px` }}
+        className="text-center text-gray-900"
+        style={{ fontSize }}
       >
         {urdu}
       </UrduText>
 
       {showRoman && (
-        <p className="mt-3 text-center text-lg italic text-gray-600">
+        <p className="mt-3 text-center text-sm italic text-gray-600">
           {roman}
         </p>
       )}
