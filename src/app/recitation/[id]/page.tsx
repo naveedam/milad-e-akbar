@@ -1,16 +1,21 @@
+"use client";
+
+import { use, useState } from "react";
 import Link from "next/link";
 import milad from "@/data/milad.json";
+
 import VerseBlock from "@/components/reader/VerseBlock";
 import ReaderControls from "@/components/reader/ReaderControls";
 import FontSizeControl from "@/components/reader/FontSizeControl";
-import PageImage from "@/components/reader/PageImage";
+import AudioPlayer from "@/components/reader/AudioPlayer";
 
 interface Props {
   params: Promise<{ id: string }>;
 }
 
-export default async function RecitationPage({ params }: Props) {
-  const { id } = await params;
+export default function RecitationPage({ params }: Props) {
+  const { id } = use(params);
+  const [currentTime, setCurrentTime] = useState(0);
 
   const item = milad.find((r) => r.id === id);
 
@@ -46,14 +51,14 @@ export default async function RecitationPage({ params }: Props) {
             {item.poet}
           </p>
 
-          {/* Reader Controls Panel */}
-<div className="mt-6 rounded-2xl bg-[#EFE7D2] p-4">
-  <ReaderControls />
+          {/* Reader Controls */}
+          <div className="mt-6 rounded-2xl bg-[#EFE7D2] p-4">
+            <ReaderControls />
 
-  <div className="mt-4 border-t border-[#D8C9A8] pt-4">
-    <FontSizeControl />
-  </div>
-</div>
+            <div className="mt-4 border-t border-[#D8C9A8] pt-4">
+              <FontSizeControl />
+            </div>
+          </div>
 
           {/* Bismillah Ornament */}
           <div className="mt-6 flex items-center justify-center gap-3">
@@ -63,25 +68,26 @@ export default async function RecitationPage({ params }: Props) {
           </div>
         </div>
 
-        {/* Scanned Book Page */}
-         <PageImage page={item.page} />
-
-        {/* Playback Bar */}
-        <div className="mt-10 rounded-full bg-[#0F5132] px-4 py-3 text-white shadow-lg">
-          <div className="flex items-center justify-between">
-            <button className="text-sm font-medium transition hover:text-[#D4AF37]">
-              ◀ Prev
-            </button>
-
-            <button className="flex h-14 w-14 items-center justify-center rounded-full bg-[#D4AF37] text-2xl text-[#0F5132] shadow-md transition hover:scale-105">
-              ▶
-            </button>
-
-            <button className="text-sm font-medium transition hover:text-[#D4AF37]">
-              Next ▶
-            </button>
-          </div>
+        {/* Verses */}
+        <div className="mt-8 space-y-5">
+          {item.verses.map((verse, index) => (
+            <VerseBlock
+              key={index}
+              urdu={verse.urdu}
+              roman={verse.roman}
+              active={
+                currentTime >= Number(verse.start) &&
+                currentTime < Number(verse.end)
+              }
+            />
+          ))}
         </div>
+
+        {/* Audio Player */}
+        <AudioPlayer
+          src={item.audio}
+          onTimeUpdate={setCurrentTime}
+        />
       </div>
     </main>
   );

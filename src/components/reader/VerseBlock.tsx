@@ -18,16 +18,17 @@ export default function VerseBlock({
 
   return (
     <div
-      className={`verse rounded-xl px-4 py-5 transition ${
-        active ? "bg-[#FFF4CC]" : ""
+      className={`rounded-xl px-4 py-5 transition-all duration-300 ${
+        active
+          ? "bg-[#F3E7BF] shadow-md ring-1 ring-[#D4AF37]"
+          : ""
       }`}
     >
-      <UrduText
-        className="text-center text-gray-900"
-        style={{ fontSize }}
-      >
-        {urdu}
-      </UrduText>
+      <div style={{ fontSize: `${fontSize}px` }}>
+        <UrduText className="text-center text-gray-900">
+          {urdu}
+        </UrduText>
+      </div>
 
       {showRoman && (
         <p className="mt-3 text-center text-sm italic text-gray-600">
